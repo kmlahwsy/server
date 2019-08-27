@@ -1,4 +1,4 @@
 <?php
 echo "dddd";
-echo "인녕ㅎ";
+echo "안녕ㅎ";
 ?>

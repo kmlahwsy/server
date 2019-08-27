@@ -1,4 +1,4 @@
-<?php
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -100,4 +100,3 @@
     <div><pre class="line-numbers"><code class="language-javascript">console.log(&quot;Good Luck!&quot;);</code></pre></div>
 </body>
 </html>
-?>

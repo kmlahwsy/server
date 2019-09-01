@@ -13,7 +13,7 @@
 
     if($result_name->num_rows==1 && $result_id->num_rows==1)
     {
-        echo pw;
+        echo "pw";
         exit();
     }
 ?>

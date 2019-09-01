@@ -11,7 +11,7 @@
     $result_name=$mysqli->query($check_name);
     $result_id=$mysqli->query($check_name);
 
-    if($result_name->num_rows==1 && $result_id->num_rows==1)
+    if($name = $row['name'] && $id = $row['id'])
     {
         echo "pw";
         exit();

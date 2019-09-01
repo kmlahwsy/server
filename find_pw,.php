@@ -2,11 +2,11 @@
     
     require('db.php');
 
-    $id = $_POST['id'];
     $name = $_POST['name'];
-    $pw = $_POST['pw'];
+    $id = $_POST['id'];
     
-    $check="SELECT *from user_info WHERE userid='$id'";
+    $check_name="SELECT *from user_info WHERE username='$name'";
+    $check_id="SELECT *from user_info WHERE userid='$id'";
     $result=$mysqli->query($check);
     if($result->num_rows==1)
     {

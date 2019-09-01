@@ -2,7 +2,7 @@
     
     require('db.php');
 
-    $id = $_POST['id'];
-    $name = $_POST['name'];
+    $id = $_GET['id'];
+    $name = $_GET['name'];
     
 ?>

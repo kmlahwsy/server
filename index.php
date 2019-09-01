@@ -26,10 +26,12 @@
 
 				echo "<p><a href='logout.php'>로그아웃</a></p>";
 			?>
-        	<a href="signup.html" target="right">
-				<button>회원가입 하러가기</button>
+        	<a href="signup.html">
+				<input type="button" name="signupbtn" value="회원가입 하러가기">
 			</a>
-			
+			<a href="find_pw.html">
+				<input type="button" name="findpwbtn" value="비밀번호 찾으러가기">
+			</a>
     </body>
 
 </html> 

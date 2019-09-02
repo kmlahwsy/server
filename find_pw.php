@@ -2,8 +2,8 @@
     
     require('db.php');
 
-    $name_input = $_POST['name'];
-    $id_input = $_POST['id'];
+    $name_input = $_GET['name_input'];
+    $id_input = $_GET['id_input'];
     
     $check_name="SELECT *from user_info WHERE username='$name_input'";
     $check_id="SELECT *from user_info WHERE userid='$id_input'";

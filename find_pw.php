@@ -26,9 +26,8 @@ a {color:#333; text-decoration: none;}
                 <td><input type="text" size="35" name="name" placeholder="이름"></td>
               </tr>
               <tr>
-                <td>이메일</td>
-                <td><input type="text" name="email">@<select name="emadress"><option value="naver.com">naver.com</option><option value="nate.com">nate.com</option>
-                <option value="hanmail.com">hanmail.com</option><option value="gmail.com">gmail.com</option></select></td>
+                <td>학번</td>
+                <td><input type="text" name="st_id">@<select name="student_id"></select></td>
               </tr>
             </table>
           <input type="submit" value="아이디 찾기" />

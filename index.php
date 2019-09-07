@@ -39,6 +39,7 @@
 				<input type="button" name="signupbtn" value="회원가입 하러가기">
 			</a>
 			<br />
+			
 			<a href="find_pw.php">
 				<input type="button" name="findpwbtn" value="비밀번호 찾으러가기">
 			</a>

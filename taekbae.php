@@ -1,4 +1,5 @@
 <?php
+  require('db.php');
   $t_name = $_GET['t_name'];
   echo "<p>오늘 택배 나온 사람: $t_name </p>";
 ?>

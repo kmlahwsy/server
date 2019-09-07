@@ -26,6 +26,9 @@
 				<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
 			</a>
 			<br />
+			<a href="bballae.html">
+				<input type="button" name="bballaebutton" value="빨래통 리스트 입력하러 가기">
+			</a>
 			
 			<?php
 				echo "<p><a href='logout.php'>로그아웃</a></p>"

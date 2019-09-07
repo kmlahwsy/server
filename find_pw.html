@@ -1,5 +1,5 @@
-<?php 
-  include "../db.php";
+<? php 
+  require('db.php');
   if(isset($_SESSION['userid'])){
     echo "<script>alert('잘못된 접근입니다.'); history.back();</script>";
   }else{ ?>

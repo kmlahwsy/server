@@ -6,7 +6,7 @@
     </head>
 
     <body>
-            <h2>택배 쉽게 찾기!!<h2>
+            <h2>택배 찾기!!<h2>
             <?php
 				session_start();
 

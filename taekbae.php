@@ -3,7 +3,7 @@
   $t_name = $_GET['t_name'];
   $t_no = $_GET['t_no'];
 
-  $sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
+  $sql_t=mysqli_query($mysqli,"INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')");
   echo "<p>오늘 택배 나온 사람: $t_name (번호 $t_no) </p>";
 ?>
 

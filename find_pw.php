@@ -1,8 +1,9 @@
-<? php 
+<?php 
   require('db.php');
   if(isset($_SESSION['userid'])){
     echo "<script>alert('잘못된 접근입니다.'); history.back();</script>";
-  }else{ ?>
+  }else{ 
+?>
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
@@ -27,7 +28,7 @@ a {color:#333; text-decoration: none;}
               </tr>
               <tr>
                 <td>학번</td>
-                <td><input type="text" name="st_id">@<select name="student_id"></select></td>
+                <td><input type="text" name="st_id"></td>
               </tr>
             </table>
           <input type="submit" value="아이디 찾기" />

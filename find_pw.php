@@ -32,7 +32,7 @@ a {color:#333; text-decoration: none;}
                 <td><input type="number" name="st_id"></td>
               </tr>
             </table>
-          <input type="submit" value="아이디 찾기" />
+                <input type="submit" value="아이디 찾기" />
       </fieldset>
     </form>
   </div>

@@ -18,14 +18,17 @@
 				$id = $_SESSION['id'];
 				$name = $_SESSION['name'];
 
-				echo "<p>안녕하세요. $name($id)님</p>";
+				echo "<p>안녕하세요. $name ($id)님</p>";
 
-				//
-				//contests 여기다 추가하세요
-				//
-
-				echo "<p><a href='logout.php'>로그아웃</a></p>";
 			?>
+
+				//여기에 추가
+				<a href="taekbae.html">
+					<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
+				</a>
+
+				echo "<p><a href='logout.php'>로그아웃</a></p>"
+
         	<a href="signup.html">
 				<input type="button" name="signupbtn" value="회원가입 하러가기">
 			</a>

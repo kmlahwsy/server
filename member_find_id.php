@@ -2,11 +2,11 @@
 require('db.php');
 if($_POST["name"] == "" || $_POST["st_id"] == ""){
 		echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
-	}else{
-
+}
+else{
 	$name = $_POST['name'];
-	$st_id = $_POST['st_id'];
-
+    $st_id = $_POST['st_id'];
+    
 $sql = mq("select * from member where name = '{$name}' && st_id = '{$st_id}'");
 $result = $sql->fetch_array();
 

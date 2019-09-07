@@ -18,7 +18,7 @@ a {color:#333; text-decoration: none;}
   <div class="find">
     <form method="post" action="member_find_id.php">
       <h1>회원계정 찾기</h1>
-      <p><a href="/">홈으로</a></p>
+      <p><a href="/"><input type="button" name="tohome" value="홈으로"></a></p>
         <fieldset>
           <legend>아이디 찾기</legend>
             <table>
@@ -28,7 +28,7 @@ a {color:#333; text-decoration: none;}
               </tr>
               <tr>
                 <td>학번</td>
-                <td><input type="text" name="st_id"></td>
+                <td><input type="number" name="st_id"></td>
               </tr>
             </table>
           <input type="submit" value="아이디 찾기" />

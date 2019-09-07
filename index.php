@@ -26,8 +26,11 @@
 				<a href="taekbae.html">
 					<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
 				</a>
-
+				
+				<br />
+			<? php
 				echo "<p><a href='logout.php'>로그아웃</a></p>"
+			?>
 
         	<a href="signup.html">
 				<input type="button" name="signupbtn" value="회원가입 하러가기">

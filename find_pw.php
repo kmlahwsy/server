@@ -1,29 +1,14 @@
 <?php
-    
-    require('db.php');
+require('db.php');
+$userid = $_POST['userid'];
+$sql = mq("select * from member where id='{$userid}'");
+$result = $sql->fetch_array();
 
-    $name_input = $_GET['name_input'];
-    $id_input = $_GET['id_input'];
-    
-    $check_name="SELECT *from user_info WHERE username='$name_input'";
-    $check_id="SELECT *from user_info WHERE userid='$id_input'";
-    $result_name=$mysqli->query($check_name);
-    $result_id=$mysqli->query($check_id);
+if($result["id"] == $userid){
+	$_SESSION['uid'] = $userid;
+	echo "<script>alert('회원님의 비밀번호를 변경합니다.'); location.href='member_pw_update.php';</script>";
 
-    if($result_name->num_rows==1)
-    {
-        $row=$result_name->fetch_array(MYSQLI_ASSOC);
-
-        if($result_id==$row['id_input'])
-        {
-            $result_name = $row['name_input'];
-            $_SESSION['id_input']=$id;
-            $_SESSION['name_input']=$name;
-
-            if(isset($_SESSION['id_input'])) 
-            {
-              echo ("1234");
-            }
-        }
-    }
+}else{
+	echo "<script>alert('없는 계정입니다.'); history.back();</script>";
+}
 ?>

@@ -6,6 +6,16 @@
     $name = $_GET['name'];
     $pw = $_POST['pw'];
     $st_id = $_POST['st_id'];
+ 
+    const PASSWORD_COST = ['cost'=>12];// cost 의 기본 값은 10,시간이 조금 더 걸려도 좀 더 강력하게 보안 가능하게 cost 값 10으로
+    /* 암호화 */
+    $hash = password_hash($pw , PASSWORD_DEFAULT, PASSWORD_COST);
+ 
+    /* 패스워드 검증 */
+    if ( !password_verify($password ,$hash) ) {
+        throw new Exception('비밀번호가 일치하지 않습니다.');
+    }
+
 
     $check="SELECT *from user_info WHERE userid='$id'";
     /*
@@ -18,7 +28,7 @@
     }
     */
 
-    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,name,pw,st_id) VALUES ('$id','$name','$pw','$st_id')");
+    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,name,pw,st_id) VALUES ('$id','$name','$hash','$st_id')");
     if($signup)
     {
         ?>

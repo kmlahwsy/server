@@ -6,7 +6,7 @@
     </head>
 
     <body>
-            <h2>택배 찾기!!<h2>
+            <h2>빨래통, 택배 찾기!!<h2>
             <?php
 				session_start();
 
@@ -38,6 +38,7 @@
         	<a href="signup.html">
 				<input type="button" name="signupbtn" value="회원가입 하러가기">
 			</a>
+			<br />
 			<a href="find_pw.php">
 				<input type="button" name="findpwbtn" value="비밀번호 찾으러가기">
 			</a>

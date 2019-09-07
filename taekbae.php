@@ -4,7 +4,7 @@
   $t_no = $_GET['t_no'];
 
   $sql_t=mysqli_query($mysqli,"INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')");
-  if($signup)
+  if($sql_t)
     {
         ?>
         <meta charset="utf-8" />

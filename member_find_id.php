@@ -1,5 +1,5 @@
 <?php
-include "../db.php";
+require('db.php');
 if($_POST["name"] == "" || $_POST["st_id"] == ""){
 		echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
 	}else{

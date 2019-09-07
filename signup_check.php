@@ -8,6 +8,7 @@
     $st_id = $_POST['st_id'];
 
     $check="SELECT *from user_info WHERE userid='$id'";
+    /*
     $result=$mysqli->query($check);
     if($result->num_rows==1)
     {
@@ -15,8 +16,9 @@
         echo "<button onclick=\"location.href='signup.html'\"> 돌아가기 </button>";
         exit();
     }
+    */
 
-    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,name,pw,st_id) VALUES ('$id','$name','$pw','$st_od')");
+    $signup=mysqli_query($mysqli,"INSERT INTO user_info (id,name,pw,st_id) VALUES ('$id','$name','$pw','$st_id')");
     if($signup)
     {
         ?>

@@ -1,5 +1,5 @@
 <?php
-  require('db_t.php');
+  
   $t_name = $_GET['t_name'];
   $t_no = $_GET['t_no'];
 

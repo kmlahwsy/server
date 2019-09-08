@@ -16,7 +16,7 @@
     }
 
 
-    $check="SELECT *from user_info WHERE userid='$id'";
+    $check="SELECT *from user_info WHERE id='$id'";
     
     $result=$mysqli->query($check);
     if($result->num_rows==1)

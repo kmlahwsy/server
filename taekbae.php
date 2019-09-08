@@ -1,7 +1,6 @@
 <?php
   require('db_t.php');
   mysqli_query($con_t, $sql_t);
-  mysqli_close($con_t);
   if($con_t)
     {
       $t_name = $_GET['t_name'];

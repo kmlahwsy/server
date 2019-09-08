@@ -1,6 +1,7 @@
 <?php
-  require('db_t.php');
+  $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
   mysqli_query($con_t, $sql_t);
+  mysqli_close($con_t);
   if($con_t)
     {
       $t_name = $_GET['t_name'];
@@ -22,7 +23,6 @@
       $tno = $daya['no'];
       echo "<p>오늘 택배 나온 사람: $tname (번호 $tno) </p>";
     }
-  mysqli_close($conn);
 ?>
 
 <br/>

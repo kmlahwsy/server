@@ -5,7 +5,7 @@
     $server = $url["host"];
     $serverusername = $url["user"];
     $serverpassword = $url["pass"];
-    $db = substr($url["path"], 2);
+    $db = substr($url["path"], 1);
     $mysqli=mysqli_connect($server, $serverusername, $serverpassword, $db);
     
 ?>

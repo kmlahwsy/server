@@ -1,9 +1,12 @@
 <?php
-  require('db_t.php');
   $t_name = $_GET['t_name'];
   $t_no = $_GET['t_no'];
 
-  $sql_t=mysqli_query($mysqli,"INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')");
+  $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
+  $sql_t="INSERT INTO t_list (name,no)";
+  $sql_t .= "VALUES ('$t_name','$t_no')";
+  mysqli_query($con, $sql);
+  mysqli_close($con);
   if($sql_t)
     {
         ?>

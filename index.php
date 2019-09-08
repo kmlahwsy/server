@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>로그인 예제</title>
+        <title>빨래통, 택배 찾기</title>
     </head>
 
     <body>

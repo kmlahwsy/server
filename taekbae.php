@@ -1,6 +1,5 @@
 <?php
-  $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
-  $sql_t .= ;
+  require('db_t.php');
   mysqli_query($con_t, $sql_t);
   mysqli_close($con_t);
   if($con_t)

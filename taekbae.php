@@ -12,11 +12,10 @@
         ?>
         <meta charset="utf-8" />
         <script type="text/javascript">alert('추가 완료!');</script>
-        <meta http-equiv="refresh" content="0 url=/">
         <?php
     }
     else
-        echo "<button onclick=\"location.href='signup.html'\"> 추가 실패, 다시 시도해주세요. </button>";
+        echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
   echo "<p>오늘 택배 나온 사람: $t_name (번호 $t_no) </p>";
 ?>
 

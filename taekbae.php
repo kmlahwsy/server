@@ -5,8 +5,8 @@
   $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
   $sql_t="INSERT INTO t_list (name,no)";
   $sql_t .= "VALUES ('$t_name','$t_no')";
-  mysqli_query($con, $sql);
-  mysqli_close($con);
+  mysqli_query($con_t, $sql_t);
+  mysqli_close($con_t);
   if($sql_t)
     {
         ?>

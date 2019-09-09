@@ -8,7 +8,7 @@
     $db = substr($url["path"], 1);
     $mysqli=mysqli_connect($server, $serverusername, $serverpassword, $db);
     // Check connection
-  if (!$conn) {
+  if (!$mysqli) {
     die("Connection failed: " . mysqli_connect_error());
   }
   echo "Connected successfully";

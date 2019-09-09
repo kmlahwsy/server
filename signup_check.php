@@ -1,21 +1,4 @@
 <?php
-    $connect = @mysql_connect ( "us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067" ) or die ( "DB접속에러" );
-    mysql_query ( "SET NAMES UTF8" ); // UTF-8 ENCODING
-    
-    mysql_query ( "set session character_set_connection=utf8;" );
-    mysql_query ( "set session character_set_results=utf8;" );
-    mysql_query ( "set session character_set_client=utf8;" );
-    $result = @mysql_query("SELECT * FROM user_info where 1==1 ") or die("SQL error");
-
-    while ($row = mysql_fetch_array($result)) {
-
-       echo $row['id'];
-
-    }
-    /*
-    // Select DB
-    @mysql_select_db ( "DB이름", $connect ) or die ( "DB선택에러" );
-
     
     require('db.php');
 
@@ -56,5 +39,4 @@
     }
     else
         echo "<button onclick=\"location.href='signup.html'\"> 회원가입 실패, 돌아가기 </button>";
-    */
 ?>

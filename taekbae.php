@@ -20,7 +20,7 @@
     while ($data = mysql_fetch_array($result))
     {
       $tname = $data['name'];
-      $tno = $daya['no'];
+      $tno = $data['no'];
       echo "<p>오늘 택배 나온 사람: $tname (번호 $tno) </p>";
     }
 ?>

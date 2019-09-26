@@ -1,12 +1,12 @@
 <?php
     
     require('db.php');
-?>
-<meta charset="utf-8" />
-<?php
+
     $id = $_POST['id'];
     $name = $_POST['name'];
+    iconv("CP949", "UTF-8", $name);
     $password = $_POST['pw'];
+    iconv("CP949", "UTF-8", $password);
     $st_id = $_POST['st_id'];
 
     $check="SELECT *from user_info WHERE id='$id'";

@@ -2,11 +2,24 @@
     
     require('db.php');
 
+    //id
     $id = $_POST['id'];
+
+    //name
     $name = $_POST['name'];
-    iconv("CP949", "UTF-8", $name);
+    //name 변수의 charset 확인하기
+    $charset_name = mb_detect_encoding($name, "EUC-KR, UTF-8, ASCII");
+    //name 변수 unicode 인코딩
+    iconv($charset_name, "UTF-8", $name);
+
+    //password
     $password = $_POST['pw'];
-    iconv("CP949", "UTF-8", $password);
+    //password 변수의 charset 확인하기
+    $charset_password = mb_detect_encoding($password, "EUC-KR, UTF-8, ASCII");
+    //password 변수 unicode 인코딩
+    iconv($charset_password, "UTF-8", $password);
+
+    //st_id
     $st_id = $_POST['st_id'];
 
     $check="SELECT *from user_info WHERE id='$id'";

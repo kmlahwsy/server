@@ -6,18 +6,16 @@
     $id = $_POST['id'];
 
     //name
-    $name = $_POST['name'];
-    //name 변수의 charset 확인하기
-    $charset_name = mb_detect_encoding($name, "EUC-KR, UTF-8, ASCII");
-    //name 변수 unicode 인코딩
-    iconv($charset_name, "UTF-8", $name);
+    //$_name 변수의 charset 확인하기
+    $charset_name = mb_detect_encoding($_POST['name'], "EUC-KR, UTF-8, ASCII");
+    //$_name 변수 unicode 인코딩
+    $name= iconv($charset_name, "UTF-8", $_POST['name']);
 
     //password
-    $password = $_POST['pw'];
-    //password 변수의 charset 확인하기
-    $charset_password = mb_detect_encoding($password, "EUC-KR, UTF-8, ASCII");
-    //password 변수 unicode 인코딩
-    iconv($charset_password, "UTF-8", $password);
+    //$_pw 변수의 charset 확인하기
+    $charset_password = mb_detect_encoding($_POST['pw'], "EUC-KR, UTF-8, ASCII");
+    //$_pw 변수 unicode 인코딩
+    $password= iconv($charset_password, "UTF-8", $_POST['pw']);
 
     //st_id
     $st_id = $_POST['st_id'];

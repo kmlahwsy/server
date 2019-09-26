@@ -17,7 +17,8 @@
 				}
 				$id = $_SESSION['id'];
 				$name = $_SESSION['name'];
-
+				
+				iconv("CP949", "UTF-8", $name);
 				echo "<p>안녕하세요. $name ($id)님</p>";
 
 			?>

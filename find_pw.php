@@ -8,7 +8,7 @@
 <html lang=ko>
 <head>
 <meta charset="utf-8" />
-<title>회원가입 폼</title>
+<title>비밀번호 찾기<title>
 <style>
 * {margin: 0 auto;}
 a {color:#333; text-decoration: none;}

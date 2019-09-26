@@ -2,8 +2,8 @@
     
     require('db.php');
 
-    $id = $_GET['id'];
-    $name = $_GET['name'];
+    $id = $_POST['id'];
+    $name = $_POST['name'];
     $password = $_POST['pw'];
     $st_id = $_POST['st_id'];
 

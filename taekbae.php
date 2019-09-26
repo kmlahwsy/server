@@ -1,7 +1,5 @@
 <?php
   $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
-  mysqli_query($con_t, $sql_t);
-  mysqli_close($con_t);
   if($con_t)
     {
       $t_name = $_GET['t_name'];
@@ -14,6 +12,8 @@
     {
      echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
     }
+    mysqli_query($con_t, $sql_t);
+    mysqli_close($con_t);
 
     $query= "select * from t_list where name = '{$t_name}' && no = '{$t_no}'";
     $result= mysql_query($query,$con_t);

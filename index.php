@@ -18,7 +18,11 @@
 				$id = $_SESSION['id'];
 				$name = $_SESSION['name'];
 				
-				iconv("CP949", "UTF-8", $name);
+				//name 변수의 charset 확인하기
+				$charset_name = mb_detect_encoding($name, "EUC-KR, UTF-8, ASCII");
+				//name 변수 unicode 인코딩
+				iconv($charset_name, "UTF-8", $name);
+				
 				echo "<p>안녕하세요. $name ($id)님</p>";
 
 			?>

@@ -22,7 +22,7 @@
 				//name 변수의 charset 확인하기
 				$charset_name = mb_detect_encoding($name);
 				//name 변수 unicode 인코딩
-				$name_u= iconv($charset_name, 'UTF-8', $_SESSION['name']);
+				$name_u= iconv($charset_name, 'UTF-8', $name);
 
 				echo "<p>안녕하세요. $name_u ($id)님</p>";
 

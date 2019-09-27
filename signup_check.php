@@ -7,13 +7,13 @@
 
     //name
     //$_name 변수의 charset 확인하기
-    $charset_name = mb_detect_encoding($_POST['name'], "EUC-KR, UTF-8, ASCII");
+    $charset_name = mb_detect_encoding($_POST['name'], 'auto');
     //$_name 변수 unicode 인코딩
     $name= iconv($charset_name, "UTF-8", $_POST['name']);
 
     //password
     //$_pw 변수의 charset 확인하기
-    $charset_password = mb_detect_encoding($_POST['pw'], "EUC-KR, UTF-8, ASCII");
+    $charset_password = mb_detect_encoding($_POST['pw'], 'auto');
     //$_pw 변수 unicode 인코딩
     $password= iconv($charset_password, "UTF-8", $_POST['pw']);
 

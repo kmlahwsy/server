@@ -20,7 +20,7 @@
 				
 				
 				//name 변수의 charset 확인하기
-				$charset_name = mb_detect_encoding($name, 'auto');
+				$charset_name = mb_detect_encoding($name, 'UTF-8, ISO-8859-1');
 				//name 변수 unicode 인코딩
 				$name_u=  mb_convert_encoding($charset_name, 'UTF-8', $name);
 

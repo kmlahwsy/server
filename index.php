@@ -18,7 +18,7 @@
 				$id = $_SESSION['id'];
 				
 				//name 변수의 charset 확인하기
-				$charset_name = mb_detect_encoding($_SESSION['name'], "EUC-KR, UTF-8, ASCII");
+				$charset_name = mb_detect_encoding($_SESSION['name'], 'auto');
 				//name 변수 unicode 인코딩
 				$name= iconv($charset_name, "UTF-8", $_SESSION['name']);
 				

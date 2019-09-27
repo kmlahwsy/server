@@ -16,7 +16,7 @@
 					exit;
 				}
 				$id = $_SESSION['id'];
-				$name = $_POST['name'];
+				$name = $_SESSION['name'];
 				
 				
 				//name 변수의 charset 확인하기

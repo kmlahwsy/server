@@ -16,13 +16,15 @@
 					exit;
 				}
 				$id = $_SESSION['id'];
-				$name = $_SESSION['name'];
+				$name = $_POST['name'];
 				
+				/*
 				//name 변수의 charset 확인하기
 				$charset_name = mb_detect_encoding($name,'auto');
 				//name 변수 unicode 인코딩
 				$name_u= iconv($charset_name, 'UTF-8', $_SESSION['name']);
-
+				*/
+				
 				echo "<p>안녕하세요. $name_u ($id)님</p>";
 
 			//택배 리스트 입력하는 버튼 (이름과 택배 번호) --> taekbae.html와 연결 ?>

@@ -36,7 +36,7 @@
 
 				$name_u = htmlentities($name);
 
-				echo "<p>안녕하세요."+html_entity_decode ($name_u ($id))+"님</p>";
+				echo "<p>안녕하세요. $name_u ($id) 님</p>";
 
 			//택배 리스트 입력하는 버튼 (이름과 택배 번호) --> taekbae.html와 연결 ?>
 			<a href="taekbae.html">

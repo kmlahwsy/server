@@ -19,10 +19,20 @@
 				$name = $_SESSION['name'];
 				
 				
+				/*
+				실패한 코드
 				//name 변수의 charset 확인하기
 				$charset_name = mb_detect_encoding($name, 'auto');
 				//name 변수 unicode 인코딩
 				$name_u=  mb_convert_encoding($charset_name, 'UTF-8', $name);
+				*/
+
+				/*
+				function fnUnicodeToUTF8($string) {
+				return html_entity_decode(preg_replace("/%u([0-9a-f]{3,4})/i","&#x\\1;",urldecode($string)), null, 'UTF-8');
+				}*/
+
+				$name_u = html_entity_decode ($name);
 
 				echo "<p>안녕하세요. $name_u ($id)님</p>";
 

@@ -32,7 +32,7 @@
 				return html_entity_decode(preg_replace("/%u([0-9a-f]{3,4})/i","&#x\\1;",urldecode($string)), null, 'UTF-8');
 				}*/
 
-				$name_u = html_entity_decode ($name);
+				$name_u = html_entity_decode (htmlentities($name));
 
 				echo "<p>안녕하세요. $name_u ($id)님</p>";
 

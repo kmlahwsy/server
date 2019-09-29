@@ -1,19 +1,35 @@
 <?php
-  $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
-  if($con_t)
-    {
-      $t_name = $_GET['t_name'];
-      $t_no = $_GET['t_no'];
-      $sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
-      mysql_query($sql_t,$con_t);
-      echo "추가완료!";
+ // $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
+  
+    $host = 'us-cdbr-iron-east-02.cleardb.net';
+    $user = 'b0166a7ca9fa10';
+    $pw = 'b0166a7ca9fa10';
+    $dbName = 't_list';
+    $mysqli_t = new mysqli($host, $user, $pw, $dbName);
+
+    if ($mysqli_t){
+      echo "MySQL 접속 성공";
     }
+    else{
+      echo "MySQL 접속 실패";
+    }
+
+    $t_name = $_GET['t_name'];
+    $t_no = $_GET['t_no'];
+      
+    $sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
+    mysql_query($sql_t,$mysqli_t);
+    echo "추가완료!";
+    
+    /*
     else
     {
      echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
     }
-    mysqli_query($con_t, $sql_t);
-    mysqli_close($con_t);
+    */
+
+    mysqli_query($mysqli_t, $sql_t);
+    mysqli_close($mysqli_t);
 
 
     $check="SELECT * FROM t_info WHERE name='$t_name' && no='$t_no'";

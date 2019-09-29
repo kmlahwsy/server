@@ -15,6 +15,34 @@
     mysqli_query($con_t, $sql_t);
     mysqli_close($con_t);
 
+
+    $check="SELECT * FROM t_info WHERE name='$t_name' && no='$t_no'";
+    $result=$mysqli->query($check); 
+
+    //택배 리스트의 이름과 번호를 저장할 배열 선언
+    $t_Name= array();
+    $t_No= array();
+
+    //택배 리스트 개수 세는 변수
+    $count=0;
+
+    //db의 택배 리스트의 정보들 가져오기
+    if($result->num_rows==1)
+    {
+        $row=$result->fetch_array(MYSQLI_ASSOC);
+  
+        array_push($t_Name, $row['name']);
+        array_push($t_No, $row['no']);
+        $count = $count+1;
+    }
+
+    echo "<p>오늘 택배 나온 사람: "
+    //택배리스트 출력하기
+    for($i = 1 ; $i <= $count; $i++){ 
+      echo "<p>오늘 택배 나온 사람: $tname (번호 $tno) ,</p>";
+    }
+
+    /* 실패한 코드
     $query= "select * from t_list where name = '{$t_name}' && no = '{$t_no}'";
     $result= mysql_query($query,$con_t);
     while ($data = mysql_fetch_array($result))
@@ -23,6 +51,7 @@
       $tno = $data['no'];
       echo "<p>오늘 택배 나온 사람: $tname (번호 $tno) </p>";
     }
+    */
 ?>
 
 <br/>

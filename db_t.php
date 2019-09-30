@@ -1,5 +1,5 @@
 <?php
-  
+    /*  
     //t_list 접속
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $server = $url["host"];       
@@ -17,5 +17,18 @@
       echo "MySQL 접속 실패";
       error_log("MySQL 접속 실패");
     }
+    */
+
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $server = $url["host"];
+    $serverusername = $url["user"];
+    $serverpassword = $url["pass"];
+    $db = substr($url["path"], "t_list");
+    $mysqli=mysqli_connect($server, $serverusername, $serverpassword, $db);
+    // Check connection
+  if (!$mysqli) {
+    die("Connection failed: " . mysqli_connect_error());
+  }
+  else echo "Connected successfully";
 
 ?>

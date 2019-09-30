@@ -12,9 +12,11 @@
 
     if ($mysqli_t){
       echo "MySQL 접속 성공";
+      error_log("MySQL 접속 성공");
     }
     else{
       echo "MySQL 접속 실패";
+      error_log("MySQL 접속 실패");
     }
 
     $t_name = $_GET['t_name'];

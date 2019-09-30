@@ -1,6 +1,7 @@
 <?php
  // $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
   
+    /*
     //t_list 접속
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $server = $url["host"];       
@@ -18,13 +19,18 @@
       echo "MySQL 접속 실패";
       error_log("MySQL 접속 실패");
     }
+    */
+    require('db_t.php');
 
-    $t_name = $_GET['t_name'];
-    $t_no = $_GET['t_no'];
+    $t_name = $_POST['t_name'];
+    $t_no = $_POST['t_no'];
       
-    $sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
-    mysql_query($sql_t,$mysqli_t);
-    echo "추가완료!";
+    //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
+    $taekbae=mysqli_query($mysqli,"INSERT INTO t_list (name, no) VALUES ('$t_name','$t_no')");
+    if($taekbae) {
+      echo "추가완료!";
+    }
+    //mysql_query($sql_t,$mysqli_t);
     
     /*
     else

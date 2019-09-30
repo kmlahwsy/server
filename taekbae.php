@@ -1,11 +1,14 @@
 <?php
  // $con_t=mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b0166a7ca9fa10", "88d08067", "t_list");
   
-    $host = 'mysql://b0166a7ca9fa10:88d08067@us-cdbr-iron-east-02.cleardb.net/heroku_98b63b4473192eb?reconnect=true';
+
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $server = $url["host"];       
+    //$host = 'us-cdbr-iron-east-02.cleardb.net';
     $user = 'b0166a7ca9fa10';
     $pw = '88d08067';
     $dbName = 't_list';
-    $mysqli_t = new mysqli($host, $user, $pw, $dbName);
+    $mysqli_t = new mysqli($server, $user, $pw, $dbName);
 
     if ($mysqli_t){
       echo "MySQL 접속 성공";

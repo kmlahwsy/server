@@ -9,20 +9,17 @@
     if($taekbae) {
       echo "추가완료!";
     }
-    //mysql_query($sql_t,$mysqli_t);
-    
-    /*
     else
     {
      echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
     }
-    */
+
 
     mysqli_query($mysqli_t, $sql_t);
     mysqli_close($mysqli_t);
 
 
-    $check="SELECT * FROM t_info WHERE name='$t_name' && no='$t_no'";
+    $check="SELECT * FROM t_list WHERE name='$t_name' && no='$t_no'";
     $result=$mysqli->query($check); 
 
     //택배 리스트의 이름과 번호를 저장할 배열 선언

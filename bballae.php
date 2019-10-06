@@ -1,5 +1,5 @@
 <?php
-  $b_st_id = $_GET['b_st_id'];
+  $b_st_id = $_POST['b_st_id'];
   echo "<p>오늘 빨래통 나온 사람: $b_st_id </p>";
 ?>
 

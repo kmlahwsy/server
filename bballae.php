@@ -13,10 +13,12 @@
     }
 
 
-  echo "<p>오늘 빨래통 나온 사람: </p>";
-  $check="SELECT * FROM b_list";
-  $result=$mysqli->query($check); 
-  while($newrow = mysqli_fetch_array( $result ) )
+  echo "<p>오늘 빨래통 나온 사람들: </p>";
+  $check_b="SELECT * FROM b_list";
+  $check_u="SELECT * FROM user_info";
+  $result_b=$mysqli->query($check_b); 
+  $result_u=$mysqli->query($check_u);
+  while($newrow = mysqli_fetch_array( $result_b ) )
     {
         $bid = $newrow['id'];
         echo $bid;

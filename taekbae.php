@@ -19,9 +19,16 @@
     mysqli_close($mysqli_t);
 
 
-    $check="SELECT * FROM t_list WHERE name='$t_name' && no='$t_no'";
+    $check="SELECT * FROM t_list";
     $result=$mysqli->query($check); 
+    while($newrow = mysqli_fetch_array( $result ) )
+      {
+          $tname = $newrow['name'];
+          $tno =  $newrow['no'];
+          echo $tname;
+      }
 
+      /*
     //택배 리스트의 이름과 번호를 저장할 배열 선언
     $t_Name= array();
     $t_No= array();

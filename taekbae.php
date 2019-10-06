@@ -18,7 +18,7 @@
     //mysqli_query($mysqli_t, $sql_t);
     //mysqli_close($mysqli_t);
 
-    echo "오늘 택배 나온 사람들";
+    echo "오늘 택배 나온 사람들: ";
     $check="SELECT * FROM t_list";
     $result=$mysqli->query($check); 
     while($newrow = mysqli_fetch_array( $result ) )

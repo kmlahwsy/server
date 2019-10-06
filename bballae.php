@@ -2,8 +2,8 @@
   $b_st_id = $_POST['b_st_id'];
 
     //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
-    $taekbae=mysqli_query($mysqli,"INSERT INTO b_list (id) VALUES ('$b_st_id')");
-    if($taekbae) {
+    $bbbb=mysqli_query($mysqli,"INSERT INTO b_list (id) VALUES ('$b_st_id')");
+    if($bbbb) {
       echo "추가완료!";
     }
     else

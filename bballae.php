@@ -1,6 +1,26 @@
 <?php
   $b_st_id = $_POST['b_st_id'];
-  echo "<p>오늘 빨래통 나온 사람: $b_st_id </p>";
+
+    //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
+    $taekbae=mysqli_query($mysqli,"INSERT INTO b_list (id) VALUES ('$b_st_id')");
+    if($taekbae) {
+      echo "추가완료!";
+    }
+    else
+    {
+     echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
+    }
+
+
+  echo "<p>오늘 빨래통 나온 사람: </p>";
+  $check="SELECT * FROM b_list";
+  $result=$mysqli->query($check); 
+  while($newrow = mysqli_fetch_array( $result ) )
+    {
+        $bid = $newrow['id'];
+        echo $bid;
+        echo "<br>";
+    }
 ?>
 
 <br/>

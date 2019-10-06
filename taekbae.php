@@ -25,7 +25,7 @@
       {
           $tname = $newrow['name'];
           $tno =  $newrow['no'];
-          echo $tname + " " + $tno;
+          echo "$tname ($tno)";
           echo "<br>";
       }
 

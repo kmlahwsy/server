@@ -5,6 +5,7 @@
     //id
     $id = $_POST['id'];
 
+    /*
     //name
     //$_name 변수의 charset 확인하기
     $charset_name = mb_detect_encoding($_POST['name'], 'auto');
@@ -17,8 +18,11 @@
     //$_pw 변수 unicode 인코딩
     $password= iconv($charset_password, "UTF-8", $_POST['pw']);
 
+    */
     //st_id
     $st_id = $_POST['st_id'];
+    $pw = $_POST['pw'];
+    $name = $POST['name'];
 
     $check="SELECT *from user_info WHERE id='$id'";
         

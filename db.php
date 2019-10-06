@@ -6,6 +6,11 @@
     $serverusername = $url["user"];
     $serverpassword = $url["pass"];
     $db = substr($url["path"], 1);
+
+    echo $server;
+    echo $serverusername;
+    echo $serverpassword;
+
     $mysqli=mysqli_connect($server, $serverusername, $serverpassword, $db);
     // Check connection
   if (!$mysqli) {

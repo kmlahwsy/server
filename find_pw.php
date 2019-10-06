@@ -2,7 +2,9 @@
   require('db.php');
   if(isset($_SESSION['userid'])){
     echo "<script>alert('잘못된 접근입니다.'); history.back();</script>";
-  }else{ 
+  }
+  else{ 
+    echo "debug";
 ?>
 <!DOCTYPE html>
 <html lang=ko>
@@ -52,4 +54,8 @@ a {color:#333; text-decoration: none;}
   </div>
 </body>
 </html>
-<?php } ?>
+
+
+<?php
+} 
+?>

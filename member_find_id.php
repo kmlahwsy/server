@@ -1,4 +1,9 @@
 <?php
+
+echo "미완성 파일";
+// THIS FILE IS NOT USED
+
+/*
 require('db.php');
 if($_POST["name"] == "" || $_POST["st_id"] == ""){
 		echo '<script> alert("항목을 입력하세요"); history.back(); </script>';
@@ -16,4 +21,5 @@ if($result["name"] == $name){
 echo "<script>alert('없는 계정입니다.'); history.back();</script>";
 }
 }
+*/
 ?>

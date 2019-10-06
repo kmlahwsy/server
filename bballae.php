@@ -3,7 +3,7 @@
 
   require('db.php');
     //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
-    $bbbb=mysqli_query($mysqli,"INSERT INTO b_list (id) VALUES ('$b_st_id')");
+    $bbbb=mysqli_query($mysqli,"INSERT INTO b_list (st_id) VALUES ('$b_st_id')");
     if($bbbb) {
       echo "추가완료!";
     }
@@ -18,10 +18,12 @@
   $check_u="SELECT * FROM user_info";
   $result_b=$mysqli->query($check_b); 
   $result_u=$mysqli->query($check_u);
-  while($newrow = mysqli_fetch_array( $result_b ) )
+  while($newrow_b = mysqli_fetch_array($result_b))
     {
-        $bid = $newrow['id'];
-        echo $bid;
+        $b_stid = $newrow_b['st_id'];
+        $newrow_u = mysqli_fetch_array($result_u);
+        $b_name = $newrow_u['name'];
+        echo "<p> $b_name ($b_stid) <p>";
         echo "<br>";
     }
 ?>

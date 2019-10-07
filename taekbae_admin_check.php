@@ -36,5 +36,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = 'taekbae.html';
+    window.location = 'taekbae_admin_check.php';
 </script>

@@ -19,7 +19,7 @@
   while($newrow_b = mysqli_fetch_array($result_b))
     {
         $b_stid = $newrow_b['st_id'];
-        $check_u="SELECT * FROM user_info WHERE st_id=b_stid";
+        $check_u="SELECT * FROM user_info WHERE st_id=$b_stid";
         $result_u=$mysqli->query($check_u);
         $newrow_u = mysqli_fetch_array($result_u);
         $b_name = $newrow_u['name'];

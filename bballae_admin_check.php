@@ -36,5 +36,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = 'login.html';
+    window.location = 'index.php';
 </script>

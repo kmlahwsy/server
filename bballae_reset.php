@@ -1,6 +1,6 @@
 <?php 
     require('db.php');
-    $delete = mysqli_query($mysqli,"DELETE * FROM b_list");
+    $delete = mysqli_query($mysqli,"DELETE FROM b_list");
     if ($delete) {
         echo "초기화 완료!";
     }

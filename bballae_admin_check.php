@@ -36,5 +36,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = 'index.php';
+    window.location = 'bballae.html';
 </script>

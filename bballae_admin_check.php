@@ -36,5 +36,5 @@
     <?php 
         unset($_POST);
     ?>
-    window.location = 'bballae.html';
+    window.location = 'bballae_admin_check.php';
 </script>

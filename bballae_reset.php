@@ -1,4 +1,7 @@
 <?php 
     require('db.php');
-    truncate 'b_list';
+    $delete = "DELETE FROM b_list";
+    if ($delete) {
+        echo "삭제 완료!";
+    }
 ?>

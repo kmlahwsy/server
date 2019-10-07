@@ -9,7 +9,7 @@
     }
     else
     {
-     echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
+     echo "<button onclick=\"location.href='bballae.html'\"> 이미 입력한 사람입니다. </button>";
     }
 
 

@@ -45,7 +45,7 @@
 			<br />
 
 			<?php //빨래 리스트 입력하는 버튼 (학번) --> bballae.html와 연결 ?>
-			<a href="bballae.html">
+			<a href="bballae_admin_check.html">
 				<input type="button" name="bballaebutton" value="빨래통 리스트 입력하러 가기">
 			</a>
 			

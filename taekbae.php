@@ -4,7 +4,6 @@
     $t_name = $_POST['t_name'];
     $t_no = $_POST['t_no'];
       
-    //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
     $taekbae=mysqli_query($mysqli,"INSERT INTO t_list (name, no) VALUES ('$t_name','$t_no')");
     if($taekbae) {
       echo "추가완료!";
@@ -13,12 +12,10 @@
     {
      echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";
     }
-
-
-    //mysqli_query($mysqli_t, $sql_t);
-    //mysqli_close($mysqli_t);
+    echo "<br>";
 
     echo "오늘 택배 나온 사람들: ";
+    echo "<br>";
     $check="SELECT * FROM t_list";
     $result=$mysqli->query($check); 
     while($newrow = mysqli_fetch_array( $result ) )

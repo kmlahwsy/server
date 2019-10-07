@@ -2,7 +2,6 @@
   $b_st_id = $_POST['b_st_id'];
 
   require('db.php');
-    //$sql_t="INSERT INTO t_list (name,no) VALUES ('$t_name','$t_no')";
     $bbbb=mysqli_query($mysqli,"INSERT INTO b_list (st_id) VALUES ('$b_st_id')");
     if($bbbb) {
       echo "추가완료!";

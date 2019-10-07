@@ -9,9 +9,6 @@
     if($taekbae) {
       echo "추가완료!";
     }
-    ?>
-    <br />
-    <?php
     else
     {
      echo "<button onclick=\"location.href='taekbae.html'\"> 추가 실패, 다시 시도해주세요. </button>";

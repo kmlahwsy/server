@@ -9,11 +9,13 @@
     }
     else
     {
-     echo "<button onclick=\"location.href='bballae.html'\"> 이미 입력한 사람입니다. </button>";
+     echo "<button onclick=\"location.href='bballae.html'\"> 이미 입력한 사람입니다. 뒤로가기 </button>";
     }
-
+ 
+    echo "<br>";
 
   echo "<p>오늘 빨래통 나온 사람들: </p>";
+  echo "<br>";
   $check_b="SELECT * FROM b_list";
   $result_b=$mysqli->query($check_b);
   while($newrow_b = mysqli_fetch_array($result_b))

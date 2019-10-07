@@ -39,7 +39,7 @@
 				echo "<p>안녕하세요. $name_u ($id) 님</p>";
 
 			//택배 리스트 입력하는 버튼 (이름과 택배 번호) --> taekbae.html와 연결 ?>
-			<a href="taekbae.html">
+			<a href="taekbae_admin_check.html">
 				<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
 			</a>
 			<br />

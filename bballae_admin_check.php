@@ -15,7 +15,7 @@
         $row=$result->fetch_array(MYSQLI_ASSOC);
         if($pw == $row['pw'])
         {
-            if($row['role']=='admin') {
+            if($row['role_b']=='admin') {
                 $name = $row['name'];
                 //비밀번호 확인됐으면 세션 변수 만들기
                 $_SESSION['id']=$id;

@@ -54,17 +54,6 @@
 				echo "<p><a href='logout.php'>로그아웃</a></p>"
 			?>
 			<br />
-
-			<?php //회원가입하러 가는 버튼 --> signup.html와 연결 ?>
-        	<a href="signup.html">
-				<input type="button" name="signupbtn" value="회원가입 하러가기">
-			</a>
-			<br />
-			
-			<?php //비밀번호 찾으러 가는 버튼 --> find_pw.php와 연결 ?>
-			<a href="find_pw.php">
-				<input type="button" name="findpwbtn" value="비밀번호 찾으러가기">
-			</a>
     </body>
 
 </html> 

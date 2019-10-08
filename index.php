@@ -11,7 +11,7 @@
 				require('db.php');
 				session_start();
 
-				if(!isset($_SESSION['id']) || !isset($_SESSION['name']))
+				if(!isset($_SESSION['id']) /*|| !isset($_SESSION['name'])*/)
 				{
 					echo "<meta http-equiv='refresh' content='0;url=login.html'>";
 					exit;

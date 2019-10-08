@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang=ko>
 <meta charset="utf-8" />
-#fixed {
-    position: fixed;
-    top: 0;
-    width: 1300px;
-    background-color: #201D72;
-  }
-<form method='POST' action='login_check.php'>
-    <table style="margin-left: auto; margin-right: auto;">
-        <tr>
-            <td>아이디</td>
-            <td><input type='text' name='id' tabindex='1'/></td>
-            <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
-            <td style=padding-left:250;padding-bottom:0>
-        </tr>
-        <tr>
-            <td>비밀번호</td>
-            <td><input type='number' name='pw' tabindex='2'/></td>
-            <td style=padding-left:250;padding-bottom:0>
-        </tr>
-    </table>
-
-</form>
-<form method='POST' name = "form">
-    <div class="button">
-        <button type="button" onclick="location.href='signup.html' ">회원가입 하러가기</button>
-    </div>
-    <div class="button">
-        <button type="button" onclick="location.href='find_pw.php' ">비밀번호 찾으러가기</button>
-    </div>
-</form>
+<head>
+    <style type="text/css">
+        #fixed {
+            position: fixed;
+            top: 0;
+            width: 1300px;
+            background-color: #201d72;
+          }
+    </style>
+</head>
+<body>
+    <form method='POST' action='login_check.php'>
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>아이디</td>
+                <td><input type='text' name='id' tabindex='1'/></td>
+                <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
+                <td style=padding-left:250;padding-bottom:0>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type='number' name='pw' tabindex='2'/></td>
+                <td style=padding-left:250;padding-bottom:0>
+            </tr>
+        </table>
+            
+    </form>
+    <form method='POST' name = "form">
+        <div class="button">
+            <button type="button" onclick="location.href='signup.html' ">회원가입 하러가기</button>
+        </div>
+        <div class="button">
+            <button type="button" onclick="location.href='find_pw.php' ">비밀번호 찾으러가기</button>
+        </div>
+    </form>
+</body>
 </html>

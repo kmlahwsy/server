@@ -1,43 +1,70 @@
-<!DOCTYPE html>
-<html lang=ko>
-<meta charset="utf-8" />
-<head>
-    <style type="text/css">
-        #fixed {
-            position: fixed;
-            top: 0;
-            width: 1300px;
-            background-color: #201d72;
-          }
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>login page</title>
+    <style>
+      #jb-container {
+        width: 940px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #201D72;
+      }
+      #jb-content {
+        width: 450px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar-right {
+        width: 160px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
     </style>
-</head>
-<body>
-    <form method='POST' action='login_check.php'>
-        <table style="margin-left: auto; margin-right: auto;">
-            <tr>
-                <td>아이디</td>
-                <td><input type='text' name='id' tabindex='1'/></td>
-                <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
-                <td style=padding-left:250;padding-bottom:0>
-            </tr>
-            <tr>
-                <td>비밀번호</td>
-                <td><input type='number' name='pw' tabindex='2'/></td>
-                <td style=padding-left:250;padding-bottom:0>
-            </tr>
-        </table>
-            
-    </form>
-    <div id = "fixed">
-        hello
+  </head>
+  <body>
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1>Welcome KMLA Family! 택배 & 빨래통 리스트 찾기</h1>
+      </div>
+      <div id="jb-content">
+            <img id="theImg"  src="https://commons.wikimedia.org/wiki/File:Minjokgyoyukgwan.JPG" />
+        </div>
+      <div id="jb-sidebar-right">
+            <form method='POST' action='login_check.php'>
+                    <table style="margin-left: auto; margin-right: auto;">
+                        <tr>
+                            <td>아이디</td>
+                            <td><input type='text' name='id' tabindex='1'/></td>
+                            <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
+                            <td style=padding-left:250;padding-bottom:0>
+                        </tr>
+                        <tr>
+                            <td>비밀번호</td>
+                            <td><input type='number' name='pw' tabindex='2'/></td>
+                            <td style=padding-left:250;padding-bottom:0>
+                        </tr>
+                    </table>
+                        
+                </form>
+      </div>
+      <div id="jb-footer">
+        <p>Copyright 김희원 조성윤</p>
+      </div>
     </div>
-    <form method='POST' name = "form">
-        <div class="button">
-            <button type="button" onclick="location.href='signup.html' ">회원가입 하러가기</button>
-        </div>
-        <div class="button">
-            <button type="button" onclick="location.href='find_pw.php' ">비밀번호 찾으러가기</button>
-        </div>
-    </form>
-</body>
+  </body>
 </html>

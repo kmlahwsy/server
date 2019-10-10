@@ -56,7 +56,7 @@
 
     <body>
 
-    	    <dic id="jb-header">
+    	    <div id="jb-header">
     	    	<h3>빨래통, 택배 찾기!!</h3>
       		</div>
       	<div id = "jb-content">

@@ -32,7 +32,7 @@
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_2 {
-        	width: 300px;
+        	width: 280px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;

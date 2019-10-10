@@ -3,9 +3,9 @@
 
     $t_name = $_POST['t_name'];
     $t_no = $_POST['t_no'];
-    //$t_place = 
+    $t_place = $_POST['t_place'];
       
-    $taekbae=mysqli_query($mysqli,"INSERT INTO t_list (name, no) VALUES ('$t_name','$t_no')");
+    $taekbae=mysqli_query($mysqli,"INSERT INTO t_list (name, no, place) VALUES ('$t_name','$t_no','$t_place')");
     if($taekbae) {
       echo "추가완료!";
     }
@@ -23,7 +23,8 @@
       {
           $tname = $newrow['name'];
           $tno =  $newrow['no'];
-          echo "$tname ($tno)";
+          $tplace = $newrow['place'];
+          echo "$tname ($tno), $tplace";
           echo "<br>";
       }
 

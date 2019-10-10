@@ -3,11 +3,65 @@
     <head>
         <meta charset="utf-8">
         <title>빨래통, 택배 찾기</title>
+        <style>
+	      #jb-header {
+	        padding: 20px;
+    	    margin-bottom: 20px;
+    	    border: 1px solid #201D72;
+        	background-color: #201D72;
+      	}
+       	#jb-sidebar-right_1 {
+        	width: 200px;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	float: right;
+        	border: 1px solid #bcbcbc;
+      	}
+          	#jb-sidebar-right_2 {
+        	width: 200px;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	float: right;
+        	border: 1px solid #bcbcbc;
+      	}
+      	#jb-sidebar-left_1 {
+        	width: 200px;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	float: left;
+        	border: 1px solid #bcbcbc;
+      	}
+      	#jb-sidebar-left_2 {
+        	width: 200px;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	float: left;
+        	border: 1px solid #bcbcbc;
+      	}
+
+      	#jb-content {
+        	width: 1024px;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	float: left;
+        	border: 1px solid #bcbcbc;
+      	}
+      	#jb-footer {
+        	clear: both;
+        	padding: 20px;
+      	  	border: 1px solid #bcbcbc;
+      	}
+    	</style>
     </head>
 
     <body>
-            <h2>빨래통, 택배 찾기!!<h2>
-            <?php
+
+    	    <div id="jb-header">
+    	    	 <h2 style="color:#ffffff;">빨래통, 택배 찾기!!<h2>
+      		</div>
+      	<dic id = "jb-content">
+   		    <div id="jb-sidebar-right_1">
+   		        <?php
 				require('db.php');
 				session_start();
 
@@ -50,21 +104,36 @@
 				//$name_u = htmlentities($name);
 
 			//택배 리스트 입력하는 버튼 (이름과 택배 번호) --> taekbae.html와 연결 ?>
-			<a href="taekbae_admin_check.html">
-				<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
-			</a>
-			<br />
+				<a href="taekbae_admin_check.html">
+					<input type="button" name="taekbaebutton" value="택배 리스트 입력하러 가기">
+				</a>    	    	 
+      		</div>
 
-			<?php //빨래 리스트 입력하는 버튼 (학번) --> bballae.html와 연결 ?>
-			<a href="bballae_admin_check.html">
-				<input type="button" name="bballaebutton" value="빨래통 리스트 입력하러 가기">
-			</a>
-			
+    	    <div id="jb-sidebar-right_2">
+				<?php //빨래 리스트 입력하는 버튼 (학번) --> bballae.html와 연결 ?>
+				<a href="bballae_admin_check.html">
+					<input type="button" name="bballaebutton" value="빨래통 리스트 입력하러 가기">
+				</a>  	    	 
+      		</div> 
+      		
+    	    <div id="jb-sidebar-left_1">
+				<a href="taekbae_list.html">
+					<input type="button" name="bballaelistbutton" value="택배 리스트 확인하러 가기">
+				</a>     	    	
+      		</div>
+
+    	    <div id="jb-sidebar-left_2">
+				<a href="bballae_list.html">
+					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
+				</a>     	    	
+      		</div>
+
 			<?php
 				//로그아웃하는 버튼 --> logout.php와 연결
 				echo "<p><a href='logout.php'>로그아웃</a></p>"
 			?>
 			<br />
+		</div>
     </body>
 
 </html> 

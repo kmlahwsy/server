@@ -5,34 +5,34 @@
         <title>빨래통, 택배 찾기</title>
         <style>
 	      #jb-header {
-	        padding: 15px;
+	        padding: 10px;
     	    margin-bottom: 20px;
     	    border: 1px solid #201D72;
         	background-color: #201D72;
       	}
        	#jb-sidebar-right_1 {
-        	width: 300px;
+        	width: 295px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
           	#jb-sidebar-right_2 {
-        	width: 300px;
+        	width: 295px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_1 {
-        	width: 300px;
+        	width: 295px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_2 {
-        	width: 280px;
+        	width: 295px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;

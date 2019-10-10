@@ -13,7 +13,7 @@
      while($newrow_t = mysqli_fetch_array($result_t))
          {
              $t_name = $newrow_t['name'];
-             $t_no = $newrow_u['n0'];
+             $t_no = $newrow_u['no'];
              echo "<p> $t_name ($t_no) <p>";
              echo "<br>";
          }

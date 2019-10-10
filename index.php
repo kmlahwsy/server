@@ -127,7 +127,8 @@
 				<a href="bballae_list.html">
 					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
 				</a>     	    	
-      		</div>
+			  </div>
+			  <br>
 			  <?php
 				//로그아웃하는 버튼 --> logout.php와 연결
 				echo "<p><a href='logout.php'>로그아웃</a></p>"

@@ -40,7 +40,7 @@
       	}
 
       	#jb-content {
-        	width: 1024px;
+        	width: 1350px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
@@ -57,7 +57,11 @@
     <body>
 
     	    <div id="jb-header">
-    	    	<h3 style="color:#ffffff;">빨래통, 택배 찾기!!</h3>
+				<h3 style="color:#ffffff;">빨래통, 택배 찾기!!</h3>
+				<?php
+				//로그아웃하는 버튼 --> logout.php와 연결
+				echo "<p><a href='logout.php'>로그아웃</a></p>"
+			?>
       		</div>
       	<div id = "jb-content">
    		    <div id="jb-sidebar-right_1">
@@ -127,10 +131,7 @@
 					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
 				</a>     	    	
       		</div>
-      		<?php
-				//로그아웃하는 버튼 --> logout.php와 연결
-				echo "<p><a href='logout.php'>로그아웃</a></p>"
-			?>
+      		
 		</div>
     </body>
 

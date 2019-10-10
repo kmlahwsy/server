@@ -61,7 +61,7 @@
       		</div>
       	<div id = "jb-content">
    		    <div id="jb-sidebar-right_1">
-			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="200px" height="300px" /></a>
+			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="300px" height="300px" /></a>
    		        <?php
 				require('db.php');
 				session_start();

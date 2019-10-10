@@ -129,7 +129,7 @@
       		</div>
       		<?php
 				//로그아웃하는 버튼 --> logout.php와 연결
-				echo "<p><a href='logout.php'><input type="button" name="logout" value="로그아웃"></a></p>"
+				echo "<p><a href='logout.php'>로그아웃</a></p>"
 			?>
 		</div>
     </body>

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    오늘 나온 빨래!
+    </head>
+
+</html>
 <?php
     require('db.php');
     $check_b="SELECT * FROM b_list";

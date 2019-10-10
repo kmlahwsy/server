@@ -3,6 +3,7 @@
 
     $t_name = $_POST['t_name'];
     $t_no = $_POST['t_no'];
+    //$t_place = 
       
     $taekbae=mysqli_query($mysqli,"INSERT INTO t_list (name, no) VALUES ('$t_name','$t_no')");
     if($taekbae) {

@@ -9,7 +9,7 @@
 <?php
      require('db.php');
      $check_t="SELECT * FROM t_list";
-     $result_t=$mysqli->query($check_b);
+     $result_t=$mysqli->query($check_t);
      while($newrow_t = mysqli_fetch_array($result_t))
          {
              $t_stid = $newrow_t['st_id'];

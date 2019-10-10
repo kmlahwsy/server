@@ -60,7 +60,7 @@
 				<h3 style="color:#ffffff;">빨래통, 택배 찾기!!</h3>
       		</div>
       	<div id = "jb-content">
-   		    <div id="jb-sidebar-right_1">
+   		    <div id="jb-sidebar-left_1">
 			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="280px" height="300px" /></a>
    		        <?php
 				require('db.php');
@@ -110,22 +110,26 @@
 				</a>    	    	 
       		</div>
 
-    	    <div id="jb-sidebar-right_2">
+    	    <div id="jb-sidebar-left_2">
+				<img id="theImg"  src="https://cdn.pixabay.com/photo/2017/08/22/10/47/washing-machine-2668472_1280.jpg" border="3px" width="280px" height="300px" /></a>
 				<?php //빨래 리스트 입력하는 버튼 (학번) --> bballae.html와 연결 ?>
 				<a href="bballae_admin_check.html">
 					<input type="button" name="bballaebutton" value="빨래통 리스트 입력하러 가기">
 				</a>  	    	 
       		</div> 
 
-    	    <div id="jb-sidebar-left_1">
-				<a href="taekbae_list.html">
-					<input type="button" name="bballaelistbutton" value="택배 리스트 확인하러 가기">
+    	    <div id="jb-sidebar-right_1">
+				<a href="bballae_list.html">
+					<img id="theImg"  src="https://cdn.pixabay.com/photo/2016/12/19/22/53/checklist-1919292_1280.jpg" border="3px" width="280px" height="300px" /></a>
+					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
 				</a>     	    	
       		</div>
 
-    	    <div id="jb-sidebar-left_2">
-				<a href="bballae_list.html">
-					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
+    	    <div id="jb-sidebar-right_2">
+				<a href="taekbae_list.html">
+					<img id="theImg"  src="https://cdn.pixabay.com/photo/2017/02/18/11/00/checklist-2077019_1280.jpg" border="3px" width="280px" height="300px" /></a>
+					<input type="button" name="bballaelistbutton" value="택배 리스트 확인하러 가기">
+					
 				</a>     	    	
 			  </div>
 			  <br>

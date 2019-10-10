@@ -1,5 +1,4 @@
 <?php
-
     require('db.php');
     $check_b="SELECT * FROM b_list";
     $result_b=$mysqli->query($check_b);

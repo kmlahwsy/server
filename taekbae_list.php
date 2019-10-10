@@ -7,13 +7,17 @@
 
 </html>
 <?php
-    $check="SELECT * FROM t_list";
-    $result=$mysqli->query($check); 
-    while($newrow = mysqli_fetch_array( $result ) )
-      {
-          $tname = $newrow['name'];
-          $tno =  $newrow['no'];
-          echo "$tname ($tno)";
-          echo "<br>";
-      }
+     require('db.php');
+     $check_t="SELECT * FROM t_list";
+     $result_t=$mysqli->query($check_b);
+     while($newrow_t = mysqli_fetch_array($result_t))
+         {
+             $t_stid = $newrow_t['st_id'];
+             $check_u="SELECT * FROM user_info WHERE st_id=$t_stid";
+             $result_u=$mysqli->query($check_u);
+             $newrow_u = mysqli_fetch_array($result_u);
+             $t_name = $newrow_u['name'];
+             echo "<p> $t_name ($t_stid) <p>";
+             echo "<br>";
+         }
 ?>

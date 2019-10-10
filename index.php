@@ -121,10 +121,9 @@
 				<a href="taekbae_list.php">
 					<img id="theImg"  src="https://cdn.pixabay.com/photo/2017/02/18/11/00/checklist-2077019_1280.jpg" border="3px" width="250px" height="300px" /></a>
 					<input type="button" name="bballaelistbutton" value="택배 리스트 확인하러 가기">
-					
 				</a>     	    	
-			  </div>
-			  <div id="jb-sidebar-right_1">
+			</div>
+			<div id="jb-sidebar-right_1">
 				<a href="bballae_list.php">
 					<img id="theImg"  src="https://cdn.pixabay.com/photo/2016/12/19/22/53/checklist-1919292_1280.jpg" border="3px" width="250px" height="300px" /></a>
 					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">

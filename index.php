@@ -58,13 +58,10 @@
 
     	    <div id="jb-header">
 				<h3 style="color:#ffffff;">빨래통, 택배 찾기!!</h3>
-				<?php
-				//로그아웃하는 버튼 --> logout.php와 연결
-				echo "<p><a href='logout.php'>로그아웃</a></p>"
-			?>
       		</div>
       	<div id = "jb-content">
    		    <div id="jb-sidebar-right_1">
+			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="800px" height="500px" /></a>
    		        <?php
 				require('db.php');
 				session_start();
@@ -131,7 +128,10 @@
 					<input type="button" name="bballaelistbutton" value="빨래통 리스트 확인하러 가기">
 				</a>     	    	
       		</div>
-      		
+			  <?php
+				//로그아웃하는 버튼 --> logout.php와 연결
+				echo "<p><a href='logout.php'>로그아웃</a></p>"
+			?>
 		</div>
     </body>
 

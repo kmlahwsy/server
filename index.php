@@ -11,28 +11,28 @@
         	background-color: #201D72;
       	}
        	#jb-sidebar-right_1 {
-        	width: 320px;
+        	width: 300px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
           	#jb-sidebar-right_2 {
-        	width: 320px;
+        	width: 300px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_1 {
-        	width: 320px;
+        	width: 300px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_2 {
-        	width: 320px;
+        	width: 300px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
@@ -61,7 +61,7 @@
       		</div>
       	<div id = "jb-content">
    		    <div id="jb-sidebar-right_1">
-			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="300px" height="300px" /></a>
+			   <img id="theImg"  src="https://cdn.pixabay.com/photo/2017/07/08/10/44/parcel-2484036_1280.png" border="3px" width="280px" height="300px" /></a>
    		        <?php
 				require('db.php');
 				session_start();

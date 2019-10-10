@@ -5,16 +5,15 @@
 </head>
 <body>
     <form action = "taekbae.php" method="POST">
-        택배 위치: 
-        <select name = '택배 위치'>
+        택배 위치:
+        <select type='text' name = 't_place' tabindex='1'>
             <option value= "여사감실"> 여사감실 </option>
             <option value= "남사감실"> 남사감실 </option>
             <option value= "복도"> 복도 </option>
         </select>
-        이름: <input type='text' name='t_name' tabindex='1'/>
-        번호: <input type='number' name='t_no' tabindex='2'/>
+        이름: <input type='text' name='t_name' tabindex='2'/>
+        번호: <input type='number' name='t_no' tabindex='3'/>
         <button type="submit" value="입력하기">입력하기</button>
-        <input type="submit">
     </form>
     <br />
     <form action = "taekbae_reset.php" method="POST">

@@ -57,7 +57,7 @@
     <body>
 
     	    <dic id="jb-header">
-    	    	<h3 style="color:#ffffff;">빨래통, 택배 찾기!!<h3>
+    	    	<h3>빨래통, 택배 찾기!!</h3>
       		</div>
       	<div id = "jb-content">
    		    <div id="jb-sidebar-right_1">

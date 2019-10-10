@@ -11,28 +11,28 @@
         	background-color: #201D72;
       	}
        	#jb-sidebar-right_1 {
-        	width: 200px;
+        	width: 350px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
           	#jb-sidebar-right_2 {
-        	width: 200px;
+        	width: 350px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: right;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_1 {
-        	width: 200px;
+        	width: 350px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
         	border: 1px solid #bcbcbc;
       	}
       	#jb-sidebar-left_2 {
-        	width: 200px;
+        	width: 350px;
         	padding: 20px;
         	margin-bottom: 20px;
         	float: left;
